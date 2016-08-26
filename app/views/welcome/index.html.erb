@@ -1,0 +1,10 @@
+
+<% if current_user %>
+  <%= current_user.email %>
+  <%= link_to "Log out", logout_path, method: "delete" %>
+<% else %>
+  <div>
+    <%= link_to "Sign up", "/signup" %>
+    <%= link_to "Login", "/login" %>
+  </div>
+<% end %>

@@ -1,0 +1,20 @@
+
+
+<div>
+
+  <h1>SIGN UP !</h1>
+  
+  <%= form_for(@user) do | f | %>
+    <div>
+      <%= f.label :email %>
+      <%= f.email_field :email %>
+    </div>
+    <div>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </div>
+    <div>
+      <%= f.submit "Sign up" %>
+    </div>
+  <% end %>
+</div>
